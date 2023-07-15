@@ -34,6 +34,16 @@ public class kart {
         }
     }
 
+    public void ac(int k,int l){
+        bos[k-1][l-1]=array[k-1][l-1];
+        for (int i=0;i<4;i++){
+            for (int j=0;j<4;j++){
+                System.out.print(this.bos[i][j]);
+            }
+            System.out.println();
+        }
+        bos[k-1][l-1]="-"; //eski haline getirdim
+    }
     public int don(){
         if (q==8){
             return 1;
